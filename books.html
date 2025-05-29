@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book JSON Display</title> <!-- Web page title -->
+</head>
+<body>
+    <h1>Check Console Output</h1> <!-- Heading shown on the page -->
+
+    <script>
+        // Create a JavaScript array named 'books' containing two book objects
+        const books = [
+            {
+                "title": "The Great Gatsby",               // Title of the first book
+                "author": "F. Scott Fitzgerald",           // Author of the first book
+                "publicationYear": 1925,                   // Year it was published
+                "genres": ["Fiction", "Classics"]          // Genres of the first book
+            },
+            {
+                "title": "To Kill a Mockingbird",          // Title of the second book
+                "author": "Harper Lee",                    // Author of the second book
+                "publicationYear": 1960,                   // Year it was published
+                "genres": ["Fiction", "Coming-of-Age"]     // Genres of the second book
+            }
+        ];
+
+        // Print the title of the first book in the console
+        console.log("Title of the first book:", books[0].title);
+
+        // Print the author of the second book in the console
+        console.log("Author of the second book:", books[1].author);
+
+        // Print all genres from both books in the console
+        console.log("Genres of all books:");
+        books.forEach(book => {
+            console.log(book.genres.join(", ")); // Join genres array into a string and print
+        });
+    </script>
+</body>
+</html>

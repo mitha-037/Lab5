@@ -1,0 +1,16 @@
+[
+  {
+    // First book object
+    "title": "The Great Gatsby",              // Title of the book
+    "author": "F. Scott Fitzgerald",          // Author's name
+    "publicationYear": 1925,                  // Year of publication
+    "genres": ["Fiction", "Classics"]         // List of genres
+  },
+  {
+    // Second book object
+    "title": "To Kill a Mockingbird",         // Title of the book
+    "author": "Harper Lee",                   // Author's name
+    "publicationYear": 1960,                  // Year of publication
+    "genres": ["Fiction", "Coming-of-Age"]    // List of genres
+  }
+]

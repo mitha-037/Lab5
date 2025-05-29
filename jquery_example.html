@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery DOM Operations</title>
+
+    <!-- jQuery library from CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- CSS styling for the class "myStyle" -->
+    <style>
+        .myStyle {
+                 background-color: coral;
+            padding: 16px; /* Adds padding inside the element */
+        }
+    </style>
+</head>
+<body>
+    <!-- Element with original text to be modified using jQuery -->
+    <div id="myElement">Original Text</div>
+
+    <!-- A div element that will receive a new class using jQuery -->
+    <div id="myDIV">
+        <p>I am a myDIV.</p>
+    </div>
+
+    <!-- A button that triggers an alert when clicked -->
+    <button id="myButton">Click me</button>
+
+    <script>
+        // a) Change the text content of the element with ID "myElement"
+        $("#myElement").text("Modified Text");
+
+        // b) Add the class "myStyle" to the element with ID "myDIV"
+        $("#myDIV").addClass("myStyle");
+
+        // c) Add a click event listener to the button with ID "myButton"
+        //    When the button is clicked, show an alert
+        $("#myButton").on("click", function() {
+            alert("Button clicked!");
+        });
+    </script>
+</body>
+</html>
