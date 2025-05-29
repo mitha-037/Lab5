@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book JSON Display</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <h1>Book Information</h1>
+  <div id="output"></div>
+
+  <script>
+    // JSON data for the books
+    const books = [
+      {
+        title: "The Great Gatsby",
+        author: "F. Scott Fitzgerald",
+        publicationYear: 1925,
+        genres: ["Fiction", "Classics"]
+      },
+      {
+        title: "To Kill a Mockingbird",
+        author: "Harper Lee",
+        publicationYear: 1960,
+        genres: ["Fiction", "Coming-of-Age"]
+      }
+    ];
+
+    // Select the output div
+    const output = document.getElementById("output");
+
+    // Display required book information
+    output.innerHTML += `<p><strong>Title of the first book:</strong> ${books[0].title}</p>`;
+    output.innerHTML += `<p><strong>Author of the second book:</strong> ${books[1].author}</p>`;
+    output.innerHTML += `<p><strong>Genres of all books:</strong></p>`;
+
+    // Display all genres
+    books.forEach(book => {
+      output.innerHTML += `<p>${book.genres.join(", ")}</p>`;
+    });
+  </script>
+</body>
+</html>
